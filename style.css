@@ -1,0 +1,61 @@
+body {
+  font-size: 14px;
+}
+
+.menu  {
+  padding: 3px;
+  margin: 3px;
+}
+
+.menu li {
+  display: inline;
+	margin-right: 3px;
+	padding: 5px;
+}
+
+header, section, footer, nav  {
+  border: 1px solid black;
+  }
+
+.main-block-location {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.name {
+width: 200px;
+float: left;
+line-height: 90px;
+padding: 0;
+margin: 0;
+color: blue;
+}
+
+.phone {
+width: 200px;
+float: right;
+line-height: 90px;
+padding: 0 0 0 30px;
+margin: 0;
+background-image: url('images/icon-mobile.png');
+background-repeat: no-repeat;
+background-position: left center;
+font-weight: bold;
+font-size: 18px;
+}
+
+.clear {
+  clear: both;
+}
+
+.content {
+  border: 1px solid black;
+  width: 900px;
+  float: left;
+}
+
+.sidebar {
+  border: 1px solid black;
+  width: 280px;
+  float: right;
+}
