@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 14px;
 }
@@ -22,13 +26,19 @@ header, section, footer, nav  {
   margin: 0 auto;
 }
 
+.main-block-location::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 .name {
 width: 200px;
 float: left;
 line-height: 90px;
 padding: 0;
 margin: 0;
-color: blue;
+color: #31b6de;
 }
 
 .phone {
@@ -58,4 +68,126 @@ font-size: 18px;
   border: 1px solid black;
   width: 280px;
   float: right;
+}
+
+.table {
+  width: 100%;
+  margin: 10px;
+}
+
+.table tr, .table td {
+  margin: 25px;
+  padding: 10px;
+}
+
+.image{
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.image:first-child {
+	margin-left: 0px;
+}
+
+
+.tabs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.tabs:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 240px;
+}
+.tabs li {
+	float: left;
+}
+.tabs li > input {
+	display: none;
+}
+.tabs li > label {
+	display: inline-block;
+	border: 1px solid #999;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 20px;
+	cursor: pointer;
+  background-color: #23b5e1;
+  margin-left: 5px;
+}
+.tabs li:last-child > label {
+	border-right-width: 1px;
+}
+
+.tabs li:first-child > label {
+	margin-left: 0px;
+}
+
+.tabs .tab-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 20px;
+	border: 1px solid #999;
+	height: 200px;
+	overflow-y: auto;
+}
+
+.tabs li > input:checked + label {
+	background-color: #24b6e2;
+  color: white;
+}
+.tabs li > input:checked ~ .tab-content {
+	display: block;
+}
+
+
+
+.search-form {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+.search-input, .search-button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.search-input {
+  width: 100%;
+  height: 42px;
+  background: #F9F0DA;
+  padding-left: 15px;
+}
+.search-button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #F15B42;
+  cursor: pointer;
+}
+.search-button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #F9F0DA;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.all-news{
+  padding: 15px 0px 15px 0px;
+}
+
+.all-news-button{
+  background-color: gray;
+  color: black;
+  border-radius: 4px;
+  border: none;
 }
