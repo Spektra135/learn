@@ -10,26 +10,28 @@
       <h1 class="name">In time</h1>
       <div class="phone">066 12 577 654</div>
     </header>
-    <nav class="main-block-location">
-      <ul class="menu">
-        <li><a href="#Каталог товаров">Каталог товаров</a></li>
-        <li><a href="#Подарки">Подарки</a></li>
-        <li><a href="#Новинки">Новинки</a></li>
-        <li><a href="#Распродажа">Распродажа</a></li>
-        <li><a href="#Контакты">Контакты</a></li>
+    <nav>
+      <ul class="menu main-block-location">
+        <li><a class="menu-item" href="#Каталог товаров">Каталог товаров</a></li>
+        <li><a class="menu-item" href="#Подарки">Подарки</a></li>
+        <li><a class="menu-item" href="#Новинки">Новинки</a></li>
+        <li><a class="menu-item" href="#Распродажа">Распродажа</a></li>
+        <li><a class="menu-item" href="#Контакты">Контакты</a></li>
       </ul>
     </nav>
     <section class="main-block-location">
       <div class="content">
-        <a href="#Главная">Главная</a>
-        &rsaquo;
-        Следующая страница
+        <div class="link">
+          <a href="#Главная">Главная</a>
+          &rsaquo;&nbsp;&nbsp;&nbsp;
+          Следующая страница
+        </div>
         <h1>Новая коллекция ручных часов</h1>
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta odio vel ante porta egestas. Quisque feugiat <br/>
           Юorci vitae erat mattis, eget cursus quam hendrerit. Etiam bibendum ut nulla a porttitor. Suspendisse potenti. Nulla fringilla <br/>
           quam sit amet consequat pretium. Nunc suscipit aliquet orci eu laoreet. In congue urna ac nisl condimentum, at fermentum ex auctor.</p>
-          <img src="images\top-image.jpg">
+          <img class="image-big"src="images\top-image.jpg">
           <p>Morbi dapibus lacus in purus ullamcorper faucibus. Sed vestibulum commodo leo. Vivamus pellentesque hendrerit quam vitae viverra. <br/>
           Aenean hendrerit nisl nec est rutrum, eget auctor mauris condimentum. Integer ornare mauris id est ultrices congue. </p>
           <br/>
@@ -48,9 +50,9 @@
         <hr/>
         <h4>Заголовок</h4>
         <div>
-          <a class="image" href="#In-time1"><img src="images\image-1.jpg"></a>
-          <a class="image" href="#In-time2"><img src="images\image-2.jpg"></a>
-          <a class="image" href="#In-time3"><img src="images\image-3.jpg"></a>
+          <a class="image-small" href="#In-time1"><img src="images\image-1.jpg"></a>
+          <a class="image-small" href="#In-time2"><img src="images\image-2.jpg"></a>
+          <a class="image-small" href="#In-time3"><img src="images\image-3.jpg"></a>
         </div>
         <div>
           <p>Vestibulum porta lorem sit amet facilisis blandit. Duis mattis turpis sit amet neque volutpat, ut finibus libero<br/>
@@ -62,36 +64,40 @@
           mauris ornare maximus. Sed efficitur orci eget arcu molestie porta. Suspendisse potenti.</p>
         </div>
         <hr/>
-        <p>Таблица</p>
+        <h4>Таблица</h4>
         <table class="table">
-          <tr>
-            <td>Время</td>
-            <td>Текстовое название</td>
-            <td>Название 1</td>
-            <td>Название 2</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>9:40</td>
-            <td><a href="#Текстовое название1">Текстовое название1</a></td>
-            <td>Количество 1</td>
-            <td>Стоимость 1</td>
-            <td><a href="#Текстовая ссылка">Текстовая ссылка</a></td>
-          </tr>
-          <tr>
-            <td>11:20</td>
-            <td><a href="#Текстовое название2">Текстовое название2</a></td>
-            <td>Количество 2</td>
-            <td>Стоимость 2</td>
-            <td><a href="#Текстовая ссылка">Текстовая ссылка</a></td>
-          </tr>
-          <tr>
-            <td>9:40</td>
-            <td><a href="#Текстовое название3">Текстовое название3</a></td>
-            <td>Количество 3</td>
-            <td>Стоимость 3</td>
-            <td><a href="#Текстовая ссылка">Текстовая ссылка</a></td>
-          </tr>
+          <thead>
+            <tr>
+              <td>Время</td>
+              <td>Текстовое название</td>
+              <td>Название 1</td>
+              <td>Название 2</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:40</td>
+              <td class="table-link-1"><a href="#Текстовое название1">Текстовое название1</a></td>
+              <td>Количество 1</td>
+              <td>Стоимость 1</td>
+              <td><a href="#Текстовая ссылка">Текстовая ссылка</a></td>
+            </tr>
+            <tr>
+              <td>11:20</td>
+              <td class="table-link-1"><a href="#Текстовое название2">Текстовое название2</a></td>
+              <td>Количество 2</td>
+              <td>Стоимость 2</td>
+              <td><a href="#Текстовая ссылка">Текстовая ссылка</a></td>
+            </tr>
+            <tr>
+              <td>9:40</td>
+              <td class="table-link-1"><a href="#Текстовое название3">Текстовое название3</a></td>
+              <td>Количество 3</td>
+              <td>Стоимость 3</td>
+              <td><a href="#Текстовая ссылка">Текстовая ссылка</a></td>
+            </tr>
+          </tbody>
         </table>
         <hr/>
         <h4>Табы</h4>
@@ -121,41 +127,54 @@
       <div class="sidebar">
         <div>
           <form class="search-form">
-            <input class="search-input" type="text" placeholder="Искать здесь...">
+            <input class="search-input" type="text">
             <button  class="search-button" type="submit"></button>
           </form>
         </div>
-        <h2>Заголовок</h2>
+        <h2>Заголовок Новости</h2>
         <div>
-          <div>
-            <p><a href="#Модные женские часы в 2013 году!">Модные женские часы в 2013 году!</a></p>
-            <div>Дата</div>
-            <p>Phasellus fermentum commodo arcu, lacinia facilisis mauris placerat euismod. Donec</p>
+          <div class="news">
+            <a href="#Модные женские часы в 2013 году!">Модные женские часы в 2013 году!</a>
+            <div class="news-date">09.04.2013</div>
+            <div class="news-text">Phasellus fermentum commodo arcu, lacinia facilisis. Donec</div>
           </div>
           <hr/>
-          <div>
-            <p><a href="#Самый модный цвет 2013 года!">Самый модный цвет 2013 года!</a></p>
-          <div>Дата</div>
-          <p>Phasellus fermentum commodo arcu, lacinia facilisis mauris placerat euismod. Donec</p>
+          <div class="news">
+            <a href="#Самый модный цвет 2013 года!">Самый модный цвет 2013 года!</a>
+            <div class="news-date">09.04.2013</div>
+            <div class="news-text">Phasellus fermentum commodo arcu, lacinia facilisis mauris</div>
           </div>
           <hr/>
-          <div>
-            <p><a href="#Часы женские с керамикой">Часы женские с керамикой</a></p>
-            <div>Дата</div>
-            <p>Phasellus fermentum commodo arcu, lacinia facilisis mauris placerat euismod. Donec</p>
+          <div class="news">
+            <a href="#Часы женские с керамикой">Часы женские с керамикой</a>
+            <div class="news-date">09.04.2013</div>
+            <div class="news-text">Phasellus fermentum commodo arcu, lacinia facilisis mauris </div>
           </div>
         </div>
         <hr/>
         <div class="all-news">
-          <form>
-            <button class="all-news-button">Все новости</button>
-          </form>
+          <a href="#all-news" class="all-news-button">Все новости</a>
         </div>
+        <h2>Подписка</h2>
+        <form class="subscription">
+          <div class="form-row">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="E-mail">
+          </div>
+          <div class="subscription-button-box">
+            <input type="submit" value="Подписаться">
+          </div>
+        </form>
       </div>
     </section>
     <footer class="main-block-location">
-    Copyright 2013. Все права защищены
-    <a href="#In-time">In time</a>
+      <p></p>
+      <p>Copyright 2013. Все права защищены
+        <a href="#In-time">In time</a>
+      </p>
+      <p></p>
   </footer>
   </body>
 </html>
